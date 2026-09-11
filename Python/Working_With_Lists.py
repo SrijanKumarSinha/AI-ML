@@ -78,21 +78,31 @@ favourite_food.append("Gup-Chup")
 
 whole_food.append("Samosa chaat")
 
-print(f"My favourite food is :")
+print(f"My favourite food list is :")
 
 for food in favourite_food:
-    print(favourite_food[0:4])
- 
+    print(food)
+print("\n") 
     
 
-print(f"The whole food list is : {whole_food}")
+print(f"The whole food list is :")
 
 for food in whole_food:
-    print(whole_food[0])
-    print(whole_food[1])
-    print(whole_food[2])
-    print(whole_food[3])
-     
+    print(food)
 
+print("\nex-4.12 == More Loops\n")
 
- 
+print("\nex-4.13 == Buffet\n")
+
+buffet_foods = ('Chilli Paneer','Kadhai Paneer','Rasmalai','Rayeta','Pulao')
+print("Restaurants offers:\n")
+for food in buffet_foods:
+    print(food)
+
+#buffet_foods[0] = 'Palak Paneer'  # This will raise an error since tuples are immutable
+
+print("\nRevised menu of restaurant:\n")
+
+buffet_foods = ('Palak Paneer','Rasmalai','Rayeta','Pulao','Veg Biryani')
+for food in buffet_foods:
+    print(food)
