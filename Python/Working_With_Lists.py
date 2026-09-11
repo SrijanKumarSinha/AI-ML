@@ -106,3 +106,6 @@ print("\nRevised menu of restaurant:\n")
 buffet_foods = ('Palak Paneer','Rasmalai','Rayeta','Pulao','Veg Biryani')
 for food in buffet_foods:
     print(food)
+
+
+print("\n--- End Of The Code ---")
