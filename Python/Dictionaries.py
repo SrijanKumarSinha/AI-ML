@@ -57,7 +57,7 @@ favorite_languages = {
     }
  
 print("The following languages have been mentioned:")
-for language in set(favorite_languages.values()): # set for not repeating the same value
+for language in set(favorite_languages.values()): # using set for not repeating the same value
     print(language.title())
 
 print("\nex-6.4 == Glossary 2")
@@ -70,8 +70,43 @@ glossary = {
     'string' : 'A sequence of characters.',
     'functions' : 'A reusable blovk of organized code desgined to perform a specific, single action',
     'class' : 'A blueprint or code template used to create objects that bundle data and functions together into songle unit',
-    'OOP' : 'A style of coding that builds programs using interacting "objects that combine data and actions, making large projects easier to organize and reuse',
+    'OOP' : 'A style of coding that builds programs using interacting "objects that combine data and actions,making large projects easier to organize and reuse',
     }
 
 for glossary in glossary.values():
     print(glossary.title())
+
+print("\nex-6.5 == Rivers")
+
+rivers = {
+    'ganga' : 'india',
+    'nile' : 'egypt',
+    'amazon' : 'south america',
+    }
+
+for river, country in rivers.items():
+    print(f"The {river.title()} runs through {country.title()}.")
+
+for key in rivers:  # for printing key values of the dictionary [rivers] through loop
+    print(key)
+
+for value in rivers.values():  # for printing value of the dictionary [rivers] through loop
+    print(value)
+
+for key, value in rivers.items(): # for printing the key and value side by side through loop
+    print(key, ":", value)
+
+
+print("\nex-.6.6 == Polling")
+
+favorite_languages = {
+    'jen' : 'python',
+    'sarah' : 'c',
+    'edward' : 'rust',
+    'phil' : 'python',
+    'chris' : 'c++',
+    'bruce' : 'java',
+    'clint' : 'javascript'
+    }
+for name in sorted(favorite_languages.keys()): # using sorted, for arranging names in alphabetical order
+    print(f"{name.title()}, thankyou for voting on poll.")
