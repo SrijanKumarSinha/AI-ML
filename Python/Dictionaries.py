@@ -47,4 +47,31 @@ print(f"\nDictionary : {glossary['dictionary']}")
 print(f"\nSet : {glossary['set']}")
 print(f"\nString : {glossary['string']}")
 
+print("\nIN-TEXT PRACTICE")
 
+favorite_languages = {
+    'jen' : 'python',
+    'sarah' : 'c',
+    'edward' : 'rust',
+    'phil' : 'python',
+    }
+ 
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()): # set for not repeating the same value
+    print(language.title())
+
+print("\nex-6.4 == Glossary 2")
+
+glossary = {
+    'list' : 'A collection of items in a particular order.',
+    'tuple' : 'A collection of items that is ordered and unchangeable.',
+    'dictionary' : 'A collection of key-value pairs.',
+    'set' : 'A collection of unique items.',
+    'string' : 'A sequence of characters.',
+    'functions' : 'A reusable blovk of organized code desgined to perform a specific, single action',
+    'class' : 'A blueprint or code template used to create objects that bundle data and functions together into songle unit',
+    'OOP' : 'A style of coding that builds programs using interacting "objects that combine data and actions, making large projects easier to organize and reuse',
+    }
+
+for glossary in glossary.values():
+    print(glossary.title())
