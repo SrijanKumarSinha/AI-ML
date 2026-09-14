@@ -145,5 +145,124 @@ for avenger in people:
     print(f"Age : {avenger['age']}")
     print(f"Location : {avenger['city'].title()}\n")
 
+print("\nex-6.8 == Pets")
 
- 
+pet_1 = {
+    'breed' : 'Golden Retriever',
+    'owner name' : 'Prapti'
+    }
+
+pet_2 = {
+    'breed' : 'German Shepherd',
+    'owner name' : 'Arvind'
+    }
+
+pet_3 = {
+    'breed' : 'German Shepherd',
+    'owner name' : 'Rahul'
+    }
+
+pets = [pet_1, pet_2, pet_3]
+for pet in pets:
+    print(f" Breed : {pet['breed']}")
+    print(f"Owner Name : {pet['owner name']}\n")
+
+print("\nex-6.9 == Favorite Places")
+
+favorite_places = {
+    'Tony Stark' : ['Titan'],
+    'Steve Rogers' : ['Wakanda'],
+    'Thor' : ['Nedaviller']
+}
+
+for name, places in favorite_places.items():
+    print(f"\n{name.title()}'s favourite place is:")
+    for place in places:
+        print(f"- {place.title()}")
+
+print("\nex-6.10 == Favorite Numbers")
+
+favorite_numbers = {
+    'Tony stark' : ['7','8','9'],
+    'Steve rogers' : ['2','3','5'],
+    'Thor' : ['5','4','6'],
+    'Clint barton' : ['3','10'],
+    'Bruce banner' : ['4','2','7','1'],
+    'Natasha romanoff' : ['8','2','7']
+}
+
+for name, numbers in favorite_numbers.items():
+    num_strings = [str(number) for number in numbers]
+    horizontal_numbers = " , ".join(num_strings)
+    
+    print(f"\n{name.title()}'s favourite numbers are : {horizontal_numbers}")
+
+print("\nex-6.11 == Cities")
+
+cities = {
+    'deoghar' : {
+        'country' : 'india',
+        'state' : 'jharkhand',
+        'population' : 300000,
+        'fact' : 'One jyotirling of Mahadev is in deoghar'
+        },
+
+    'nainital' : {
+        'country' : 'india',
+        'state' : 'uttarakhand',
+        'population' : 954605,
+        'fact' : 'Kaichi dham of neeb karori baba is in the hills of nainital'
+        },
+
+    'ayodhya' : {
+        'country' : 'india',
+        'state' : 'uttar pradesh',
+        'population' : 248000000,
+        'fact' : 'Shree ram janm bhoomi , Ram mandir  in ayodhya'
+        }
+    }
+
+for city, city_info in cities.items():
+    print(f"\nCity : {city.title()}")
+    print(f"Country : {city_info['country'].title()}")
+    print(f"State : {city_info['state'].title()}")
+    print(f"Population : {city_info['population'] :,}")
+    print(f"Fact : {city_info['fact'].capitalize()}")
+
+print("\nex-6.12 == Extensions")
+
+cities = {
+    'deoghar' : {
+        'country' : 'india',
+        'state' : 'jharkhand',
+        'population' : 300000,
+        'fact' : 'One jyotirling of Mahadev is in deoghar',
+        'language' : 'hindi' # Added a new key
+        },
+
+    'nainital' : {
+        'country' : 'india',
+        'state' : 'uttarakhand',
+        'population' : 954605,
+        'fact' : 'Kaichi dham of neeb karori baba is in the hills of nainital',
+        'language' : 'kumaoni' # Added a new key
+        },
+
+    'ayodhya' : {
+        'country' : 'india',
+        'state' : 'uttar pradesh',
+        'population' : 248000000,
+        'fact' : 'Shree ram janm bhoomi , Ram mandir  in ayodhya',
+        'language' : 'awadhi' # Added a new key
+        }
+    }
+
+print("\n--- City Profiles ---")
+for city, city_info in cities.items():
+    print(f"\nWelcome to {city.title()}!")
+    print(f"Located in : {city_info['state'].title()} , {city_info['country'].title()}")
+    print(f"Regional Language is : {city_info['language'].title()}")
+    print(f"Total Population : {city_info['population']:,}")
+    print(f"Fact : {city_info['fact'].capitalize()}")
+
+print("\n--- End Of The Code ---")
