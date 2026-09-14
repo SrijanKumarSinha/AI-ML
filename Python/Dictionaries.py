@@ -1,3 +1,6 @@
+from psutil import users
+
+
 print("\nex-6.1 == Persons")
 
 user_information = { 
@@ -110,3 +113,37 @@ favorite_languages = {
     }
 for name in sorted(favorite_languages.keys()): # using sorted, for arranging names in alphabetical order
     print(f"{name.title()}, thankyou for voting on poll.")
+
+print("\nex-6.7 == People")
+
+
+avenger_1 = { 
+    'first_name': 'Tony',
+    'last_name': 'Stark',
+    'age': '48',
+    'city': 'New York'
+}
+
+avenger_2 = {
+    'first_name' : 'Bruce',
+    'last_name' : 'Banner',
+    'age' : '50',
+    'city' : 'Ohio'
+}
+
+avenger_3 = {
+    'first_name' : 'Natasha',
+    'last_name' : 'Romanoff',
+    'age' : '34',
+    'city' : 'Russia'
+}
+    
+people = [avenger_1, avenger_2, avenger_3]
+for avenger in people:
+    full_name = f"{avenger['first_name'].title()} {avenger['last_name'].title()}"
+    print(f"Name : {full_name}")
+    print(f"Age : {avenger['age']}")
+    print(f"Location : {avenger['city'].title()}\n")
+
+
+ 
