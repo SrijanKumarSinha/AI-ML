@@ -45,3 +45,16 @@ elif age >= 3 and age <= 12:
 else:
     print("The movie ticket price is 15 ruppes only")
 
+print("\nex- 7.6 == Three Exits")
+
+toppings = "\nEnter your toppings name for your pizza: "
+toppings += "\n(Enter 'quit' when you are finished.)"
+
+while True:
+    toppings_are = input(toppings)
+
+    if toppings_are == 'quit' :
+        break
+    else:
+        print(f"Give more you required.")
+    
