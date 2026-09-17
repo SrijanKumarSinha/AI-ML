@@ -57,4 +57,14 @@ while True:
         break
     else:
         print(f"Give more you required.")
+
+print("\nex- 7.7 == Infinity Loop")
+
+x = 1
+while x <= 5:   
+    print(x)
+    x += 1   # for infinity loop remove this line and run the code. It will run forever.
+
+
+
     
