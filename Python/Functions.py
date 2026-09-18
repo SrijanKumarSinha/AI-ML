@@ -124,6 +124,5 @@ while True:
     album = make_album(artist_name, album_title)
     print(f"\n {album}")
 
-print("Thank you for using the album generator!\n")
+print("\nThank you for using the album generator!")
 
-print("\tEnd of this code")
