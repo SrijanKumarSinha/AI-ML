@@ -126,3 +126,4 @@ while True:
 
 print("\nThank you for using the album generator!")
 
+print("\nex- 8.9 == Magicians")
