@@ -199,4 +199,33 @@ def make_car(manufacturer, model, **car_info):
 car = make_car('tata', 'outback', color='blue', tow_package=True)
 print(car)
 
+        # ex- 8.15 and 8.16 have separate files to work on: printing_functions_Functions.py and printing_modules_Functions.py respectively
 
+print("\nex- 8.15 == Printing Modules")
+
+def print_modules(unprinted_designs, completed_modules):
+    """Simulate printing each design until none are left."""
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        print(f"Printing design: {current_design}")
+        completed_modules.append(current_design)
+
+def show_completed_modules(completed_modules):
+    """Show all the completed modules."""
+    print("\nThe following modules have been printed:")
+    for completed_module in completed_modules:
+        print(completed_module)
+
+print("\nex- 8.16 == Imports")
+
+import printing_functions_Functions as pf
+
+unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+completed_modules = []
+
+pf.print_modules(unprinted_designs, completed_modules)
+pf.show_completed_modules(completed_modules)
+
+print("\n")
+
+print("\t--- End Of The Code ---")
