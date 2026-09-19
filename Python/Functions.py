@@ -157,3 +157,46 @@ print("\nArchived messages:")
 for msg in messages:
     print(msg)
 
+print("\nex- 8.12 == Sandwiches")
+
+def make_sandwich(*items):
+    print("Making a sandwich with the following items:")
+    for item in items:
+        print(f"- {item}")
+
+make_sandwich("lettuce", "tomato", "chicken")
+make_sandwich("bacon", "lettuce", "tomato")
+make_sandwich("turkey", "swiss cheese", "lettuce", "tomato")
+
+print("\nex- 8.13 == User Profile")
+
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing everything we know about a user."""
+    profile = {}
+    profile['first_name'] = first.title()
+    profile['last_name'] = last.title()
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+
+print("\nUser Profile:")
+user_profile = build_profile('John', 'Doe', location='New York', field='Software Engineer')
+for key, value in user_profile.items(): 
+    print(f"{key}: {value}")    
+
+print("\nex- 8.14 == Cars")
+
+def make_car(manufacturer, model, **car_info):
+    """Build a dictionary containing everything we know about a car."""
+    car_dict = {
+        'manufacturer': manufacturer.title(),
+        'model': model.title()
+    }
+    for key, value in car_info.items():
+        car_dict[key] = value
+    return car_dict
+
+car = make_car('tata', 'outback', color='blue', tow_package=True)
+print(car)
+
+
