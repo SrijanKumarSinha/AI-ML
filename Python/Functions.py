@@ -126,4 +126,34 @@ while True:
 
 print("\nThank you for using the album generator!")
 
-print("\nex- 8.9 == Magicians")
+print("\nex- 8.9 == Messages")
+
+messages = ["Hello, how are you?", "I'm doing great!", "What's up?"]
+
+def show_messages(msg_list):
+    for msg in msg_list:
+        print(msg)
+
+show_messages(messages)
+
+print("\nex- 8.10 == Sending Messages")
+
+def send_messages(msg_list):
+    sent_messages = []
+    while msg_list:
+        current_msg = msg_list.pop()
+        print(f"Sending message: {current_msg}")
+        sent_messages.append(current_msg)
+    return sent_messages
+
+sent_messages = send_messages(messages)
+print("\nSent messages:")
+for msg in sent_messages:
+    print(msg)
+
+print("\nex- 8.11 == Archived Messages")
+
+print("\nArchived messages:")
+for msg in messages:
+    print(msg)
+
