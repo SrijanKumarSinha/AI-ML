@@ -49,3 +49,37 @@ greet_user(user3)
 greet_user(user4)
 greet_user(user5)
 greet_user(user6)
+
+print("ex- 9.4 == Number Served")
+
+class Restaurant:
+
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+        self.number_served = 0
+
+    def describe_restaurant(self):
+        print(f"{self.restaurant_name} serves delicious {self.cuisine_type} cuisine.")
+
+    def open_restaurant(self):
+        print(f"{self.restaurant_name} is now open!")
+
+    def set_number_served(self, number):
+        self.number_served = number
+
+    def increment_number_served(self, additional_customers):
+        self.number_served += additional_customers
+
+restaurant = Restaurant('The Dal-Chawal', 'Indian')
+print(f"Initial customers served: {restaurant.number_served}")
+
+restaurant.number_served = 15
+
+print(f"Customers served (after direct modification): {restaurant.number_served}")
+restaurant.set_number_served(35)
+
+print(f"Customers served (after calling set_number_served): {restaurant.number_served}")
+
+restaurant.increment_number_served(25)
+print(f"Customers served (after calling increment_number_served): {restaurant.number_served}")
